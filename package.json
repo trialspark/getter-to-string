@@ -18,7 +18,8 @@
     "test": "jest",
     "build": "tsc -p ./tsconfig.json",
     "check-types": "tsc -p ./tsconfig.json --noEmit && tsc -p ./tsconfig.test.json --noEmit",
-    "lint": "eslint --ext .ts ."
+    "lint": "eslint --ext .ts .",
+    "prepublishOnly": "yarn build && yarn check-types && yarn lint && yarn test"
   },
   "repository": "git@github.com:trialspark/getter-to-string.git",
   "author": "TrialSpark, Inc.",
