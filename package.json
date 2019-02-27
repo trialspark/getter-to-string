@@ -1,0 +1,58 @@
+{
+  "name": "getter-to-string",
+  "version": "1.0.0",
+  "description": "Create lodash.get-style strings from an object and a function.",
+  "keywords": [
+    "object",
+    "utility",
+    "string",
+    "property",
+    "getter",
+    "lodash"
+  ],
+  "main": "dist/index.js",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "test": "jest",
+    "build": "tsc -p ./tsconfig.json",
+    "check-types": "tsc -p ./tsconfig.json --noEmit && tsc -p ./tsconfig.test.json --noEmit",
+    "lint": "eslint --ext .ts ."
+  },
+  "repository": "git@github.com:trialspark/getter-to-string.git",
+  "author": "TrialSpark, Inc.",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^24.0.9",
+    "@typescript-eslint/eslint-plugin": "^1.4.2",
+    "@typescript-eslint/parser": "^1.4.2",
+    "eslint": "^5.14.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jest": "^22.3.0",
+    "husky": "^1.3.1",
+    "jest": "^24.1.0",
+    "lint-staged": "^8.1.4",
+    "prettier": "1.16.4",
+    "ts-jest": "^24.0.0",
+    "typescript": "^3.3.3333"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn build && yarn check-types && lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.ts": [
+      "yarn prettier --write",
+      "yarn lint",
+      "git add"
+    ],
+    "**/*.{js,json,css,md}": [
+      "yarn prettier --write",
+      "git add"
+    ]
+  }
+}

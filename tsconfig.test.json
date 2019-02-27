@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["./src/**/*.spec.ts"],
+  "exclude": [],
+  "references": [{ "path": "./tsconfig.json" }],
+  "compilerOptions": {
+    "noEmit": true
+  }
+}

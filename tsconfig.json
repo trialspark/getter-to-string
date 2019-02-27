@@ -1,0 +1,22 @@
+{
+  "include": ["./src/**/*.ts"],
+  "exclude": ["./src/**/*.spec.ts"],
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "target": "es5",
+    "module": "commonjs",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "lib": ["es2015", "es2017"],
+    "composite": true,
+    "noEmitOnError": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "alwaysStrict": true,
+    "skipLibCheck": true
+  }
+}

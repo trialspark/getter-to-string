@@ -1,0 +1,9 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.formatOnSave": true,
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "tslint.enable": false,
+  "eslint.enable": true,
+  "eslint.packageManager": "yarn",
+  "eslint.validate": ["javascript", "typescript"]
+}
