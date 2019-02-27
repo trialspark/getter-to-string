@@ -1,6 +1,6 @@
 {
   "name": "getter-to-string",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Create lodash.get-style strings from an object and a function.",
   "keywords": [
     "object",
