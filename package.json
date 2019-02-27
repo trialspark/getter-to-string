@@ -55,5 +55,8 @@
       "yarn prettier --write",
       "git add"
     ]
+  },
+  "dependencies": {
+    "utility-types": "^3.4.1"
   }
 }
