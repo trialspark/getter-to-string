@@ -1,6 +1,6 @@
 {
-  "name": "getter-to-string",
-  "version": "1.0.0",
+  "name": "@trialspark/getter-to-string",
+  "version": "0.1.0",
   "description": "Create lodash.get-style strings from an object and a function.",
   "keywords": [
     "object",
@@ -25,20 +25,20 @@
   "author": "TrialSpark, Inc.",
   "license": "MIT",
   "devDependencies": {
-    "@types/jest": "^24.0.9",
-    "@typescript-eslint/eslint-plugin": "^1.4.2",
-    "@typescript-eslint/parser": "^1.4.2",
-    "eslint": "^5.14.1",
+    "@types/jest": "^24.0.13",
+    "@typescript-eslint/eslint-plugin": "^1.9.0",
+    "@typescript-eslint/parser": "^1.9.0",
+    "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-config-prettier": "^4.1.0",
-    "eslint-plugin-import": "^2.16.0",
-    "eslint-plugin-jest": "^22.3.0",
-    "husky": "^1.3.1",
-    "jest": "^24.1.0",
-    "lint-staged": "^8.1.4",
-    "prettier": "1.16.4",
-    "ts-jest": "^24.0.0",
-    "typescript": "^3.3.3333"
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-jest": "^22.6.4",
+    "husky": "^2.4.0",
+    "jest": "^24.8.0",
+    "lint-staged": "^8.2.0",
+    "prettier": "1.18.1",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.5.1"
   },
   "husky": {
     "hooks": {
